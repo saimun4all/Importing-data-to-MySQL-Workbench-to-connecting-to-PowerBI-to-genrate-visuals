@@ -12,9 +12,12 @@ WHERE g.geo = 'Canada';
 
 -- *** Find lowest and highest number of chocolate boxes shipped ***
 SELECT * FROM 
-	`awesome chocolates`.`sales`
+	`awesome chocolates`.`sales`;
 ORDER BY boxes;
 
 SELECT MAX(boxes) FROM 
-	`awesome chocolates`.`sales`
+	`awesome chocolates`.`sales`;
 
+SELECT COUNT(*) FROM 
+	`awesome chocolates`.`sales`
+WHERE boxes < 50;
